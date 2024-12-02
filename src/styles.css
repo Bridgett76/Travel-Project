@@ -11,12 +11,20 @@ body {
 .grid {
   display: grid;
   grid-gap: 46px;
+}
+
+.grid-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -64,6 +72,41 @@ header a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+main {
+  background-color: antiquewhite;
+  color: #272044;
+}
+
+.buildings {
+  max-width: 100%;
+}
+
+main h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-transform: uppercase;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+main p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 footer {
@@ -118,5 +161,13 @@ footer a {
 
   header h2 {
     font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px;
   }
 }
